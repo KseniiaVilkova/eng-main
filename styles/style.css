@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    background-color: #eee5dd;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10%;
+    color: #161616;
+    font-weight: 100;
+}
+h1, .inputs_header{
+    text-align: center;
+    color: #2C5A5E;
+}
+.cards_item{
+    text-align: center;
+    width: 20.9%;
+    padding: 1rem;
+    font-size: 1.5em;
+    border-radius: 6px;
+    background-color: #d0cbc7;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 1em;
+}
+.cards_item div{
+    margin: 1em;
+}
+.card_word{
+    color: #2C5A5E;
+    margin-bottom: 1em;
+}
+.card_translate{
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+.show{
+    opacity: 1;
+}
+button{
+    transition: all .3s ease-in;
+    color:#eee5dd;
+    border-radius: 6px;
+    background-color: #a68e82;
+    outline: none;
+    border: 2px solid #cdc4bf;
+    padding: .3em;
+}
+button:hover{
+    color:#eee5dd;
+    border-radius: 6px;
+    color: #2C5A5E;
+    background-color: #cdc4bf;
+    outline: none;
+    border: 2px solid #a68e82;
+    cursor: pointer;
+}
+.cards_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs *{
+    margin: 1em;
+}
+
+
+@media screen and (max-width: 1000px){
+    .cards_item{
+        width: 40%;
+    }
+    body{
+        padding: 0;
+    }
+}
